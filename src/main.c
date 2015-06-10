@@ -1,13 +1,13 @@
 #include <pebble.h>
 
-#include "windows/checkbox_window.h"
-#include "windows/dialog_choice_window.h"
-#include "windows/dialog_message_window.h"
-#include "windows/list_message_window.h"
-#include "windows/radio_button_window.h"
-#include "windows/pin_window.h"
-#include "windows/text_animation_window.h"
-#include "windows/progress_bar_window.h"
+#include "checkbox_window.h"
+#include "dialog_choice_window.h"
+#include "dialog_message_window.h"
+#include "list_message_window.h"
+#include "radio_button_window.h"
+#include "pin_window.h"
+#include "text_animation_window.h"
+#include "progress_bar_window.h"
 
 #define NUM_WINDOWS 8
 
@@ -35,7 +35,7 @@ static void draw_row_callback(GContext *ctx, Layer *cell_layer, MenuIndex *cell_
     case 4:
       menu_cell_basic_draw(ctx, cell_layer, "Radio Button", NULL, NULL);
       break;
-    case 5: 
+    case 5:
       menu_cell_basic_draw(ctx, cell_layer, "PIN Entry", NULL, NULL);
       break;
     case 6:
